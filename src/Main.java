@@ -27,8 +27,8 @@ public class Main {
         }
         System.out.println("Финишь! Вы пробежали марафон!");
 
-        System.out.println("Задача №3");
-        int budget = 3000;
+        System.out.println("Задача №3/1");
+        int budget = 500;
         int costPfrking = 100;
         int days = 0;
         int tempBudget = budget;
@@ -40,15 +40,19 @@ public class Main {
             tempBudget -= costPfrking;
         }
         System.out.println("Бюджета хватит на " + days + " дней.");
-
-        for (int i = 1; tempBudget >= costPfrking; i++) {
-            days = i;
+        System.out.println("Задача №3/2");
+        int budget1 = 600;
+        int costPfrking1 = 100;
+        int days1 = 0;
+        int tempBudget1 = budget1;
+        for (int i = 1; tempBudget1 >= costPfrking1; i++) {
+            days1 = i;
             if (i % 5 == 0) {
                 continue;
             }
-            tempBudget -= costPfrking;
+            tempBudget1 -= costPfrking1;
         }
-        System.out.println("Бюджета хватит на " + days + " дней.");
+        System.out.println("Бюджета хватит на " + days1 + " дней.");
 
         System.out.println("Задача №4");
         int month = 0;
